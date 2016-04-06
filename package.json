@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "simple test portfolio with mysql",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgkaczenski/test_portfolio.git"
+  },
+  "author": "Chris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cgkaczenski/test_portfolio/issues"
+  },
+  "homepage": "https://github.com/cgkaczenski/test_portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "connect-flash": "^0.1.1",
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.13.0",
+    "express-validator": "^2.20.3",
+    "moment": "^2.12.0",
+    "multer": "^1.1.0",
+    "mysql": "^2.10.2"
+  }
+}
