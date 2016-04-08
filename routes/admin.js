@@ -21,7 +21,13 @@ if (env === 'production') {
 connection.connect();
 
 router.get('/', function(req, res, next){
-	res.render('admin/index');
+	connection.query("SELECT * FROM projects", function(err, rows, fields){
+		if(err) throw err;
+
+		res.render('admin/index', {
+			"projects" : rows
+		});
+	});
 });
 
 router.get('/add', function(req, res, next){
