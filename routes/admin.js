@@ -161,7 +161,7 @@ router.post('/edit/:id', upload.single('projectimage'), function(req, res, next)
 });
 
 router.delete('/delete/:id', function (req, res) {
-	connection.query('DELETE FROM Projects WHERE id = '+req.params.id, function (err, result) {
+	connection.query('DELETE FROM projects WHERE id = '+req.params.id, function (err, result) {
     if (err) throw err;
 		console.log('deleted ' + result.affectedRows + ' rows');
   	});
